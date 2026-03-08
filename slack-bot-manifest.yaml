@@ -1,0 +1,36 @@
+display_information:
+  name: Meeting Assistant
+  description: Personal AI meeting preparation assistant
+features:
+  bot_user:
+    display_name: Meeting Assistant
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - assistant:write
+      - channels:history
+      - channels:read
+      - chat:write
+      - groups:history
+      - groups:read
+      - im:history
+      - im:read
+      - im:write
+      - reactions:read
+      - reactions:write
+      - users:read
+settings:
+  event_subscriptions:
+    request_url: https://resonant-verdie-unrowed.ngrok-free.dev/api/webhooks/slack
+    bot_events:
+      - app_mention
+      - message.channels
+      - message.groups
+      - message.im
+  interactivity:
+    is_enabled: true
+    request_url: https://resonant-verdie-unrowed.ngrok-free.dev/api/webhooks/slack
+  org_deploy_enabled: false
+  socket_mode_enabled: false
