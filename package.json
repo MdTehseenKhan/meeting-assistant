@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "mastra dev",
     "build": "mastra build",
-    "start": "mastra start"
+    "start": "mastra start",
+    "clean": "rm -rf .mastra node_modules dist"
   },
   "dependencies": {
     "@chat-adapter/slack": "^4.18.0",
